@@ -1,0 +1,59 @@
+/* Tai Chi Kung Fu México — ajustes sobre hugo-dpsg */
+:root {
+	--tkm-fire: #c2410c;
+	--tkm-fire-dark: #7c2d12;
+	--tkm-ink: #1c1917;
+	--tkm-paper: #fffaf3;
+}
+
+body { background: #f5efe6; color: var(--tkm-ink); }
+
+/* Encabezado: banner sobre fondo oscuro para que resalte el logo */
+.header { background: radial-gradient(ellipse at 70% 40%, #2a1a12 0%, #120c09 60%, #050403 100%); }
+.logo--banner { padding: 18px 16px; text-align: center; }
+.logo--banner .logo__img { width: 100%; max-width: 900px; height: auto; max-height: none; }
+.divider { background: linear-gradient(90deg, #009245, #fcee21, #ed1c24); height: 4px; }
+
+.wrapper { background: var(--tkm-paper); }
+
+/* Inicio */
+.tkm-intro { display: flex; gap: 1.5rem; align-items: center; flex-wrap: wrap; margin-bottom: 1.5rem; }
+.tkm-intro__img { flex: 0 0 220px; max-width: 220px; height: auto; }
+.tkm-intro__text { flex: 1 1 260px; }
+.tkm-disciplinas { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+.tkm-disciplinas > div { background: #fff; border-top: 4px solid var(--tkm-fire); padding: 1rem; box-shadow: 0 1px 3px rgba(0,0,0,.08); }
+.tkm-disciplinas h3 { margin-top: 0; }
+
+/* Aviso de datos por confirmar */
+.tkm-aviso { background: #fff7ed; border-left: 5px solid var(--tkm-fire); padding: .75rem 1rem; margin: 1rem 0; font-size: .95rem; }
+
+/* Tabla de cuotas / grupos */
+.tkm-grupo { background: #fff; padding: 1rem 1.25rem; margin-bottom: 1rem; box-shadow: 0 1px 3px rgba(0,0,0,.08); }
+.tkm-grupo h3 { margin-top: 0; color: var(--tkm-fire-dark); }
+
+/* Widget de clases */
+.widget-clases__grupo { margin-bottom: .75rem; font-size: .9rem; line-height: 1.4; }
+.widget-clases__horario { color: #57534e; }
+.widget-clases__link { display: block; text-align: center; margin-top: .5rem; }
+
+/* Posts importados de Blogger: imágenes y videos responsivos */
+.content img { max-width: 100%; height: auto; }
+.content iframe { max-width: 100%; aspect-ratio: 16 / 9; height: auto; width: 100%; }
+.content .tr-caption-container, .content table { max-width: 100%; }
+.tkm-fuente { font-size: .85rem; color: #78716c; border-top: 1px solid #e7e5e4; margin-top: 2rem; padding-top: .5rem; }
+
+/* HTML pegado de otros sitios en posts viejos: neutralizar posicionamiento absoluto */
+.content [style*="position: absolute"], .content [style*="position:absolute"] { position: static !important; width: auto !important; }
+
+/* Posts de Blogger: los estilos en línea (tamaños, fuentes y colores pensados para el fondo oscuro del blog viejo)
+   se neutralizan para que el texto use la tipografía del sitio y sea legible. */
+.post__content :is(p, span, div, font, li, td, th, b, strong, i, em, u, blockquote, h1, h2, h3, h4, h5, h6) {
+	font-family: inherit !important;
+	color: inherit !important;
+	background-color: transparent !important;
+	line-height: inherit !important;
+}
+.post__content :is(p, span, div, font, li, td, th, b, strong, i, em, u, blockquote) { font-size: inherit !important; }
+.post__content a :is(span, font, b, strong) { color: inherit !important; }
+.post__content a { color: var(--tkm-fire) !important; }
+.post__content :is(h1, h2, h3, h4, h5, h6) { color: var(--tkm-fire-dark) !important; }

@@ -1,0 +1,28 @@
+# Datos tomados del blog original (taichikungfumexico.blogspot.com). PENDIENTE confirmar con el Sifu antes de publicar.
+confirmado: false
+grupos:
+  - nombre: Grupo Prado Churubusco
+    instructor: Sifu Efrén Villegas Garduño
+    lugar: Av. Cruz del Sur esq. Canal Nacional (explanada), Col. Prado Churubusco, Coyoacán
+    horarios:
+      - Martes, viernes y domingo · 9:00 a 10:30
+    disciplinas: Qigong (Chi Kung), Hung Gar, Tai Chi
+  - nombre: Grupo Polanco
+    instructor: Sifu Efrén Villegas Garduño
+    lugar: Parque Abraham Lincoln, Polanco
+    horarios:
+      - Lunes a viernes · 8:30 a 9:30
+    telefono: "55 2430 9027"
+  - nombre: Grupo Alianza Popular Revolucionaria
+    instructor: Prof. Gerardo Montes
+    lugar: Centro Cívico, U.H. Alianza Popular Revolucionaria (calle Oriental, frente a la primera glorieta entrando por Calz. de las Bombas), Coyoacán
+    horarios:
+      - Martes y jueves · 8:00 a 10:00 y 18:00 a 20:00
+      - Domingo · 9:00 a 12:00
+cuotas:
+  - clases: 1 clase por semana (4 al mes)
+    precio: "$300"
+  - clases: 2 clases por semana (8 al mes)
+    precio: "$450"
+  - clases: 3 clases por semana (12 al mes)
+    precio: "$600"

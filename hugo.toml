@@ -1,0 +1,77 @@
+baseURL = "https://taichikungfumexico.vercel.app/"
+title = "Tai Chi Kung Fu México"
+locale = "es-MX"
+defaultContentLanguage = "es"
+theme = "hugo-dpsg"
+enableRobotsTXT = true
+summaryLength = 40
+
+[pagination]
+  pagerSize = 10
+
+[markup.goldmark.renderer]
+  unsafe = true # permite HTML dentro de las páginas Markdown
+
+[security]
+  allowContent = ['! ^text/org$'] # los posts importados de Blogger son archivos .html
+
+[permalinks]
+  blog = "/blog/:year/:month/:slug/"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[params]
+  description = "Hung Gar Kung Fu, Tai Chi y Qigong (Chi Kung) en la Ciudad de México con el Sifu Efrén Villegas Garduño."
+  copyright = "Tai Chi Kung Fu México"
+  opengraph = true
+  schema = true
+  twitter_cards = true
+  readmore = true
+  authorbox = false
+  toc = false
+  pager = true
+  indexPager = true
+  post_meta = ["date", "categories"]
+  mainSections = ["blog"]
+  dateformat = "02/01/2006"
+  customCSS = ["css/custom.css"]
+
+  [params.style.vars]
+    highlightColor = "#c2410c" # naranja-rojo del logo
+
+  [params.logo]
+    image = "img/logo-900.webp"
+    image_alt = "Tai Chi Kung Fu México — emblema de los cinco animales del Hung Gar"
+    banner = true # solo imagen: el banner ya contiene el texto
+
+  [params.sidebar]
+    home = "right"
+    list = "right"
+    single = "right"
+    widgets = ["search", "clases", "recent", "categories", "taglist", "social"]
+
+  [params.widgets]
+    recent_num = 5
+    tags_counter = true
+
+  [[params.widgets.social.custom]]
+    title = "Grupo de Facebook"
+    url = "https://www.facebook.com/groups/taichikungfu.efrenvillegas/"
+    icon = "svg/facebook.svg"
+
+  [params.footer]
+    text = "Contenido original publicado desde 2008 en [taichikungfumexico.blogspot.com](https://taichikungfumexico.blogspot.com/)."
+
+[menu]
+  [[menu.main]]
+    identifier = "inicio"
+    name = "Inicio"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    identifier = "blog"
+    name = "Artículos"
+    url = "/blog/"
+    weight = 30

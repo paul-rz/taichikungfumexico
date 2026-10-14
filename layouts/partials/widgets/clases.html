@@ -1,0 +1,15 @@
+{{- with hugo.Data.clases }}
+<div class="widget-clases widget">
+	<h4 class="widget__title">Clases</h4>
+	<div class="widget__content">
+		{{- range .grupos }}
+		<div class="widget-clases__grupo">
+			<strong>{{ .nombre }}</strong>
+			<div>{{ .lugar }}</div>
+			{{- range .horarios }}<div class="widget-clases__horario">{{ . }}</div>{{ end }}
+		</div>
+		{{- end }}
+		<a class="widget-clases__link btn" href="{{ "clases/" | relLangURL }}">Horarios, cuotas y ubicación</a>
+	</div>
+</div>
+{{- end }}

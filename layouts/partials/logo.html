@@ -1,0 +1,12 @@
+{{- /* Override del tema: con params.logo.banner el logo es solo la imagen (el banner ya incluye el texto). */ -}}
+{{- if .Site.Params.logo.banner }}
+	<div class="logo logo--banner">
+		<div class="container">
+			<a class="logo__link" href="{{ "" | relLangURL }}" title="{{ .Site.Title }}" rel="home">
+				<img class="logo__img" src="{{ .Site.Params.logo.image | relURL }}" alt="{{ .Site.Params.logo.image_alt | default .Site.Title }}" width="900" height="160">
+			</a>
+		</div>
+	</div>
+{{- else }}
+	{{- partial "logo_theme.html" . }}
+{{- end }}

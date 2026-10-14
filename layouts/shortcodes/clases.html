@@ -1,0 +1,20 @@
+{{- $d := hugo.Data.clases -}}
+{{- if not $d.confirmado }}
+<div class="tkm-aviso">Estos horarios provienen del blog original y <strong>pueden haber cambiado</strong>. Confírmalos antes de asistir.</div>
+{{- end }}
+{{- range $d.grupos }}
+<div class="tkm-grupo">
+	<h3>{{ .nombre }}</h3>
+	<p><strong>Imparte:</strong> {{ .instructor }}{{ with .disciplinas }}<br><strong>Disciplinas:</strong> {{ . }}{{ end }}<br>
+	<strong>Lugar:</strong> {{ .lugar }}</p>
+	<ul>{{ range .horarios }}<li>{{ . }}</li>{{ end }}</ul>
+	{{- with .telefono }}<p><strong>Informes:</strong> <a href="tel:+52{{ replace . " " "" }}">{{ . }}</a></p>{{ end }}
+</div>
+{{- end }}
+{{- with $d.cuotas }}
+<h2>Cuotas mensuales</h2>
+<table>
+	<thead><tr><th>Frecuencia</th><th>Cuota</th></tr></thead>
+	<tbody>{{ range . }}<tr><td>{{ .clases }}</td><td>{{ .precio }}</td></tr>{{ end }}</tbody>
+</table>
+{{- end }}
