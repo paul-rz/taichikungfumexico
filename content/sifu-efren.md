@@ -26,6 +26,24 @@ thumbnail_hide_post: true
 - **1999** — Entrena Kung Fu y Tai Chi con el profesor Jimmy Pau Kar Issai.
 - **2001** — Curso de introducción al Chi Kung con el maestro Chen Yon Fa, y con el maestro Mantak Chia los cursos *Las claves del Tan Tien, Chi Kung y la fusión de los cinco elementos* (niveles 1 y 2).
 
+## Árbol genealógico
+
+Linaje de Hung Gar del Sifu Efrén, desde el monje Gee Sin del templo Shaolin del sur hasta nuestros días.
+
+<ol class="tkm-linaje">
+<li><span class="tkm-linaje__hanzi" lang="zh-Hant">至善禪師</span><span class="tkm-linaje__nombre">Gee Sin</span></li>
+<li><span class="tkm-linaje__hanzi" lang="zh-Hant">洪熙官</span><span class="tkm-linaje__nombre">Hung Hei Gun</span></li>
+<li><span class="tkm-linaje__hanzi" lang="zh-Hant">陸亞彩</span><span class="tkm-linaje__nombre">Luk Ah Choy</span></li>
+<li><span class="tkm-linaje__hanzi" lang="zh-Hant">黃泰</span><span class="tkm-linaje__nombre">Wong Tai</span></li>
+<li><span class="tkm-linaje__hanzi" lang="zh-Hant">黃麒英</span><span class="tkm-linaje__nombre">Wong Kei Ying</span></li>
+<li><span class="tkm-linaje__hanzi" lang="zh-Hant">黃飛鴻</span><span class="tkm-linaje__nombre">Wong Fei Hung</span></li>
+<li><span class="tkm-linaje__hanzi" lang="zh-Hant">林世榮</span><span class="tkm-linaje__nombre">Lam Sai Wing</span></li>
+<li><span class="tkm-linaje__hanzi" lang="zh-Hant">陳漢宗</span><span class="tkm-linaje__nombre">Chan Hon Chung</span></li>
+<li><span class="tkm-linaje__nombre">Virgilio Sánchez</span></li>
+<li class="tkm-linaje__actual"><span class="tkm-linaje__nombre">Efrén Villegas Garduño</span></li>
+<li><span class="tkm-linaje__nombre">Gerardo Alberto Montes de la Parra</span></li>
+</ol>
+
 ## Enseñanza
 
 El Sifu Efrén imparte **Qigong (Chi Kung), Hung Gar y Tai Chi**, además de **masaje curativo chino**. Consulta los [horarios y lugares de práctica](/clases/).

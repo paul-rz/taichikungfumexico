@@ -57,3 +57,13 @@ body { background: #f5efe6; color: var(--tkm-ink); }
 .post__content a :is(span, font, b, strong) { color: inherit !important; }
 .post__content a { color: var(--tkm-fire) !important; }
 .post__content :is(h1, h2, h3, h4, h5, h6) { color: var(--tkm-fire-dark) !important; }
+
+/* Árbol genealógico (página del Sifu) */
+.content .tkm-linaje { list-style: none; margin: 1.5rem auto; padding: 0; max-width: 360px; text-align: center; clear: both; }
+.content .tkm-linaje li { list-style: none; position: relative; margin: 0; padding: .55rem 1rem; background: #fff; border: 1px solid #e7d9c8; border-radius: 6px; box-shadow: 0 1px 2px rgba(0,0,0,.06); }
+.content .tkm-linaje li + li { margin-top: 1.6rem; }
+.content .tkm-linaje li + li::before { content: ""; position: absolute; left: 50%; top: calc(-1.6rem - 1px); height: 1.6rem; border-left: 2px solid var(--tkm-fire); }
+.content .tkm-linaje .tkm-linaje__hanzi { display: block; font-size: 1.6rem !important; line-height: 1.2 !important; letter-spacing: .15em; color: var(--tkm-ink) !important; font-family: "Songti TC", "PMingLiU", "Noto Serif TC", serif !important; }
+.content .tkm-linaje .tkm-linaje__nombre { display: block; font-weight: 700; color: var(--tkm-fire-dark) !important; }
+.content .tkm-linaje .tkm-linaje__actual { background: var(--tkm-fire) !important; border-color: var(--tkm-fire) !important; }
+.content .tkm-linaje .tkm-linaje__actual .tkm-linaje__nombre { color: #fff !important; }
